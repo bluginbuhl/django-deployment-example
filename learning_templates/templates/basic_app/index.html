@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% comment %} {% load templates %} {% endcomment %}
+
+{% block body_block %}
+<div class="card">
+  <div class="card-body">
+    <h1>Welcome to Index</h1>
+    <div>{{ text|cut:"hell" }}</div>
+    <div>{{ number|add:"99" }}</div>
+  </div>
+</div>
+{% endblock %}
